@@ -4,6 +4,17 @@ import 'aos/dist/aos.css';
 
 const experiences = [
   {
+    role: "Frontend Developer",
+    company: "Stellus — Remote",
+    period: "Jun 2024 – Jul 2025 (1 yr 2 months)",
+    responsibilities: [
+      "Developed a Web3 user interface allowing users to connect wallets, deploy ERC-20 contracts, and manage smart assets with ease.",
+      "Implemented secure authentication with wallet providers (e.g., MetaMask, WalletConnect) and supported multi-chain deployments.",
+      "Built reusable UI components and dashboards using Next.js, Tailwind CSS, and TypeScript to display user transaction histories fetched directly from the blockchain.",
+      "Collaborated with the backend and smart contract team to ensure seamless integration with EVM-compatible networks.",
+    ]
+  },
+  {
     role: "Full Stack Developer",
     company: "Byteflow Tech — Nigeria",
     period: "Feb 2024–Present",
@@ -46,6 +57,7 @@ const experiences = [
     ]
   }
 ];
+;
 
 const Experience = ({ darkMode }) => {
   useEffect(() => {

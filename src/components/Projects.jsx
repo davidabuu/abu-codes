@@ -4,6 +4,17 @@ import 'aos/dist/aos.css';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
 const projects = [
+   {
+    title: "Stellus Web3 Contract Deployment Platform",
+    description: "A decentralized app that allows users to connect wallets, deploy ERC-20 contracts, view transaction history, and interact with blockchain directly from a frontend interface.",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Thirdweb SDK", "Ethers.js"],
+    demoLink: "https://www.ozura.dev",
+    features: [
+      "Connect wallet via MetaMask and WalletConnect",
+      "Deploy ERC-20 tokens with configurable metadata",
+      "Fetch and display user transactions onchain",
+    ]
+  },
   {
     title: "Real Estate Dues Management Platform",
     description: "A full-stack application enabling estates to onboard onto a centralized portal where residents can securely pay service dues and bills online.",
