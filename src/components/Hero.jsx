@@ -20,7 +20,7 @@ const Hero = ({ darkMode }) => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen overflow-hidden flex items-center pt-20 pb-16">
+    <section id="home" className="min-h-screen  overflow-hidden flex items-center pt-20 pb-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div data-aos="fade-right" className="md:w-1/2 md:ml-7 mb-12 md:mb-0">

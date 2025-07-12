@@ -22,7 +22,7 @@ const Skills = ({ darkMode }) => {
   }, []);
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
