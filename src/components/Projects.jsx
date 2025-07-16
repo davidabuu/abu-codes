@@ -54,7 +54,7 @@ const projects = [
     title: "NFT Staking Reward System",
     description: "Smart contract staking system where users earn ERC-20 tokens by staking NFTs.",
     technologies: ["Solidity", "Foundry"],
-    githubLink: "https://github.com/davidabuu/nft-staking",
+    githubLink: "https://github.com/davidabuu/nft-staking-reward",
     features: [
       "Staking logic implementation",
       "Reward distribution system",
@@ -65,7 +65,7 @@ const projects = [
     title: "Web3 Prediction Prize Pool",
 description: "Decentralized app for prediction contests with pooled reward systems.",
     technologies: ["Solidity", "Foundry"],
-    githubLink: "https://github.com/davidabuu/prediction-prize-pool",
+    githubLink: "https://github.com/davidabuu/web3-prediction-prize-pool",
     features: [
       "Pool creation functionality",
       "User participation system",
@@ -76,7 +76,7 @@ description: "Decentralized app for prediction contests with pooled reward syste
     title: "Web3 Allowance System",
     description: "Custom smart contract solution to manage access permissions in decentralized apps.",
     technologies: ["Solidity", "Foundry"],
-    githubLink: "https://github.com/davidabuu/web3-allowance",
+    githubLink: "https://github.com/davidabuu/web3-allowance-system",
     features: [
       "Flexible permission management",
       "Secure contracts",
