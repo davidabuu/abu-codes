@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, setDarkMode, activeSection }) => {
 
            
             <a
-              href="https://drive.google.com/file/d/1GG9_3VSpIWJmPb3D5dDBRiaPkT0mNgWR/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1iy8n9BAXmjCMBbSYFU_MvpEnLOcHGOh6/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className={`ml-4 px-4 py-2 rounded-lg font-medium transition-medium ${darkMode ? 'bg-orange-500 text-white hover:bg-orange-600' : 'bg-orange-400 text-white hover:bg-orange-500'}`}
@@ -101,7 +101,7 @@ const Navbar = ({ darkMode, setDarkMode, activeSection }) => {
 
             
               <a
-                href="https://drive.google.com/file/d/17BrFWv19M7lA2M-mazwJO8qekB6joZpo/view?usp=sharing"
+                href="https://drive.google.com/file/d/1iy8n9BAXmjCMBbSYFU_MvpEnLOcHGOh6/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`px-4 py-2 rounded-lg text-center font-medium transition-medium ${darkMode ? 'bg-orange-500 text-white hover:bg-orange-600' : 'bg-orange-400 text-white hover:bg-orange-500'}`}
