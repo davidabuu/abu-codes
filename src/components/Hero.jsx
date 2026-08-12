@@ -1,11 +1,12 @@
 import { useEffect, useRef } from 'react';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import AOS from 'aos';
+
 const Hero = ({ darkMode }) => {
   const textRef = useRef(null);
 
   useEffect(() => {
-    const text = "Full-stack Developer";
+    const text = "Full Stack .NET Engineer";
     let i = 0;
     const typingEffect = setInterval(() => {
       if (i < text.length) {
@@ -15,12 +16,12 @@ const Hero = ({ darkMode }) => {
         clearInterval(typingEffect);
       }
     }, 100);
- AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: true });
     return () => clearInterval(typingEffect);
   }, []);
 
   return (
-    <section id="home" className="min-h-screen  overflow-hidden flex items-center pt-20 pb-16">
+    <section id="home" className="min-h-screen overflow-hidden flex items-center pt-20 pb-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div data-aos="fade-right" className="md:w-1/2 md:ml-7 mb-12 md:mb-0">
@@ -31,7 +32,7 @@ const Hero = ({ darkMode }) => {
               <span ref={textRef} className="text-orange-400"></span>
             </h2>
             <p className="text-lg mb-8 max-w-lg">
-              Passionate about building dynamic interfaces, crafting cross-platform apps, and developing blockchain solutions.
+              Passionate about building scalable web applications, microservices, and full-stack solutions with .NET, React, and cloud-native technologies.
             </p>
             <div className="flex space-x-4 mb-8">
               <a 
@@ -68,7 +69,7 @@ const Hero = ({ darkMode }) => {
             </a>
           </div>
 
-          <div     data-aos="fade-left" className="md:w-1/2 flex justify-center">
+          <div data-aos="fade-left" className="md:w-1/2 flex justify-center">
             <div className={`relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 ${darkMode ? 'border-orange-500' : 'border-orange-400'} shadow-xl`}>
               <div className={`w-full h-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'} flex items-center justify-center`}>
                 <img 
