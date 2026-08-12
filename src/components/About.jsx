@@ -16,8 +16,7 @@ const About = ({ darkMode }) => {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2 relative inline-block">
             About Me
-          <span className={`absolute translate-y-1.5 bottom-0 left-0 w-full h-1 ${darkMode ? 'bg-orange-500' : 'bg-orange-400'} rounded-full`}></span>
-            
+            <span className={`absolute translate-y-1.5 bottom-0 left-0 w-full h-1 ${darkMode ? 'bg-orange-500' : 'bg-orange-400'} rounded-full`}></span>
           </h2>
           <p className="text-gray-500 dark:text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
             Get to know more about my skills, experience, and interests.
@@ -30,13 +29,13 @@ const About = ({ darkMode }) => {
           className={`mt-10 rounded-2xl p-6 md:p-10 transition-all shadow-xl ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'}`}
         >
           <p className="text-lg mb-6 leading-relaxed">
-            I’m a <span className="font-semibold text-orange-500">Full-stack Developer</span> with 5+ years of experience, skilled in modern technologies like React.js, Redux.js, Next.js, JavaScript, .NET, C#, and SQL.
+            I'm a <span className="font-semibold text-orange-500">Full Stack .NET Engineer</span> with 5+ years of experience building scalable full-stack applications using ASP.NET Core, C#, Next.js, React, and SQL Server.
           </p>
 
           <hr className={`my-6 ${darkMode ? 'border-gray-700' : 'border-gray-300'}`} />
 
           <p className="text-lg mb-6 leading-relaxed">
-            I’m passionate about crafting responsive user interfaces, building cross-platform apps with Flutter, and developing smart contracts using Solidity. I thrive in fast-paced, collaborative environments and enjoy integrating Web3 capabilities into full-stack applications.
+            I specialize in designing and shipping production-grade microservices with Clean Architecture, CQRS, and event-driven communication. I thrive in fast-paced, collaborative environments and enjoy integrating payment gateways, real-time analytics, and Web3 capabilities into full-stack applications.
           </p>
 
           <hr className={`my-6 ${darkMode ? 'border-gray-700' : 'border-gray-300'}`} />
