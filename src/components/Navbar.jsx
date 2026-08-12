@@ -47,15 +47,15 @@ const Navbar = ({ darkMode, setDarkMode, activeSection }) => {
             ))}
 
            
-            <a
-              href="https://drive.google.com/file/d/1iy8n9BAXmjCMBbSYFU_MvpEnLOcHGOh6/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`ml-4 px-4 py-2 rounded-lg font-medium transition-medium ${darkMode ? 'bg-orange-500 text-white hover:bg-orange-600' : 'bg-orange-400 text-white hover:bg-orange-500'}`}
-            >
-              My Résumé
-            </a>
-
+          
+<a
+  href="https://docs.google.com/document/d/1ng3_15dlPIOaFKWBppl7eHsvcpJpK2qste77XTYLULk/edit?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`ml-4 px-4 py-2 rounded-lg font-medium transition-medium ${darkMode ? 'bg-orange-500 text-white hover:bg-orange-600' : 'bg-orange-400 text-white hover:bg-orange-500'}`}
+>
+  My Résumé
+</a>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className={`p-2 rounded-full transition-medium ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-100 hover:bg-gray-200'}`}
