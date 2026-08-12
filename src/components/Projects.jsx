@@ -7,13 +7,14 @@ const projects = [
   {
     title: "EstateHub - Estate Management Platform",
     description: "A full‑stack microservices platform that automates estate management — replacing spreadsheets and WhatsApp with a unified system for managers, residents, and admins.",
-    technologies: ["React", "TypeScript", ".NET 8", "C#", "MassTransit", "RabbitMQ", "Paystack"],
+    technologies: ["React", "TypeScript", ".NET 8", "C#", "MassTransit", "RabbitMQ", "Paystack", "Azure"],
     demoLink: "https://estate-hub-frontend-dun.vercel.app/",
     features: [
       "Role-based dashboards for Admin, EstateManager, and Resident",
       "Automated dues tracking and payment collection with Paystack",
+      "Event-driven architecture with MassTransit + RabbitMQ",
       "Real-time analytics and reporting",
-      "Event-driven architecture with RabbitMQ",
+      "YARP API Gateway with centralized JWT authentication"
     ]
   },
   {
@@ -25,7 +26,7 @@ const projects = [
       "Granular role-based access control (RBAC)",
       "Audit-ready admin console",
       "Real-time complaint tracking and resolution",
-      "Monthly reports and survey analytics",
+      "Monthly reports and survey analytics"
     ]
   },
   {
@@ -36,7 +37,7 @@ const projects = [
     features: [
       "Connect wallet via MetaMask and WalletConnect",
       "Deploy ERC-20 tokens with configurable metadata",
-      "Fetch and display user transactions onchain",
+      "Fetch and display user transactions onchain"
     ]
   },
   {
@@ -52,7 +53,7 @@ const projects = [
   },
   {
     title: "Atoovis E-Commerce Platform",
-    description: "Built a scalable store and admin system with payment integration and vendor management.",
+    description: "A scalable store and admin system with payment integration and vendor management.",
     technologies: ["Next.js", "Tailwind CSS", "Redux Toolkit", "Node.js", "MongoDB"],
     demoLink: "https://www.atoovis.com/",
     features: [
@@ -96,4 +97,86 @@ const projects = [
   }
 ];
 
-// ... rest of Projects component stays the same
+const Projects = ({ darkMode }) => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+  return (
+    <section id="projects" className="py-20 overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6">
+        <div data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <span className="relative inline-block">
+              My Projects
+              <span className={`absolute translate-y-1.5 bottom-0 left-0 w-full h-1 ${darkMode ? 'bg-orange-500' : 'bg-orange-400'} rounded-full`}></span>
+            </span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              data-aos="zoom-in-up"
+              data-aos-delay={index * 100}
+              className={`rounded-xl overflow-hidden shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-gray-100'} hover:shadow-xl transition-all`}
+            >
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                <p className="mb-4 text-sm">{project.description}</p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, i) => (
+                    <span
+                      key={i}
+                      className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700 text-orange-400' : 'bg-gray-200 text-orange-600'}`}
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <ul className="mb-6 space-y-2 text-sm">
+                  {project.features.map((feature, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className={`inline-block w-2 h-2 rounded-full mt-2 mr-2 ${darkMode ? 'bg-orange-500' : 'bg-orange-400'}`}></span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex space-x-4 text-sm">
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center px-4 py-2 rounded-lg ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'}`}
+                    >
+                      <FiGithub className="mr-2" />
+                      Code
+                    </a>
+                  )}
+                  {project.demoLink && (
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center px-4 py-2 rounded-lg ${darkMode ? 'bg-orange-500 hover:bg-orange-600' : 'bg-orange-400 hover:bg-orange-500'} text-white`}
+                    >
+                      <FiExternalLink className="mr-2" />
+                      Demo
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
