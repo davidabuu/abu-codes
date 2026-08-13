@@ -28,7 +28,7 @@ const Navbar = ({ darkMode, setDarkMode, activeSection }) => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold transition-medium hover:text-orange-500">
-            Abu David
+            David Abu
           </a>
 
         
