@@ -26,7 +26,7 @@ const Hero = ({ darkMode }) => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div data-aos="fade-right" className="md:w-1/2 md:ml-7 mb-12 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-orange-500">Abu David</span>
+              Hi, I'm <span className="text-orange-500">David Abu</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">
               <span ref={textRef} className="text-orange-400"></span>
