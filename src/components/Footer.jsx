@@ -22,7 +22,7 @@ const Footer = ({ darkMode }) => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="mb-6 md:mb-0 hover:scale-105 transition-transform duration-300">
               <h2 className="text-2xl font-bold">
-                <span className="text-orange-500">Abu</span> David
+                <span className="text-orange-500">David</span> Abu
               </h2>
               <p className={`mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                 Full-stack Developer & Blockchain Enthusiast
